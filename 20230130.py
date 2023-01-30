@@ -14,4 +14,17 @@
 # aa.sort()
 # print(aa[b-1])
 
+n = int(input())
+li = list(map(int, input().split()))
+count = 0
 
+for i in range(n):
+    error = 0
+    if li[i] > 1:
+        for j in range(2,li[i]):
+            if li[i] % j == 0:
+                error += 1
+        if error == 0:
+            count += 1
+
+print(count)
