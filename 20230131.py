@@ -18,11 +18,24 @@
 #     print(min(a))
     
 
-a = int(input())
-aa = []
-for i in range(a):
-    x = int(input())
-    aa.append(x)
-    aa.sort()
-for i in aa:
-    print(i)
+# a = int(input())
+# aa = []
+# for i in range(a):
+#     x = int(input())
+#     aa.append(x)
+#     aa.sort()
+# for i in aa:
+#     print(i)
+
+# hp = int(input())
+
+# hp1 = hp % 5
+# hp2 = hp1 % 3
+# print((hp // 5) + (hp1 // 3) + hp2)
+
+def solution(rsp: str) -> str:
+    dict = {"2": "0", "0": "5", "5": "2"}
+    
+    return "".join(map(str, [dict[x] for x in rsp]))
+
+    
