@@ -33,9 +33,32 @@
 # hp2 = hp1 % 3
 # print((hp // 5) + (hp1 // 3) + hp2)
 
-def solution(rsp: str) -> str:
-    dict = {"2": "0", "0": "5", "5": "2"}
+# def solution(rsp: str) -> str:
+#     dict = {"2": "0", "0": "5", "5": "2"}
     
-    return "".join(map(str, [dict[x] for x in rsp]))
+#     return "".join(map(str, [dict[x] for x in rsp]))
+
+# n = 5
+# m = 3
+# nn, mm= 1,1
+# for i in range(1,n+1):
+#     nn *= i
+# for i in range(1,m+1):
+#     mm*= i  
+# nm = n - m
+# for i in range(1,nm+1):
+#         nm *= i
+# print(nn,mm,nm)
+# print(nn // (nm * mm))
+
+from math import factorial as fac
+n = 5
+m = 3
+
+nn = fac(n)
+mm = fac(m)
+bot = fac(n-m) * mm
+print(nn,mm,bot)
+print(nn // bot)
 
     
