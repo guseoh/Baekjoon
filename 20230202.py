@@ -36,3 +36,11 @@
 
 # for i in answer2:
 #     print(1) if i in answer else print(0)
+
+# set() 자료형으로 문자열 중북 제거
+n = int(input())
+a = [str(input()) for i in range(n)] # 문자열 반복 입력
+a = list(set(a))
+a.sort()
+a.sort(key=len)
+print("\n".join(a))
