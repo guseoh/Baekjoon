@@ -49,10 +49,27 @@
 #         print(a * i,end='')
 #     print()
     
-a = int(input())
-b = input()
-c = int(input())
-if b == '+':
-    print(a+c)
-else:
-    print(a*c)
+# a = int(input())
+# b = input()
+# c = int(input())
+# if b == '+':
+#     print(a+c)
+# else:
+#     print(a*c)
+
+n,m = map(int, input().split())
+num = list(map(int, input().split()))
+
+left, right = 0, 1
+cnt = 0
+while right <= n and left <= right:
+    sum1 = num[left:right]
+    total = sum(sum1)
+    
+    if total == m:
+        cnt += 1
+        right += 1
+    elif total < m:
+        right += 1
+    else: left += 1
+print(cnt)
