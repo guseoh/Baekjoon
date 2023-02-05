@@ -39,3 +39,20 @@
 #         answer = max(answer, 100 * max(a,b,c))
 
 # print(answer)
+
+# t = int(input())
+
+# for _ in range(t):
+#     a,b = input().split()
+#     a = int(a)
+#     for i in b:
+#         print(a * i,end='')
+#     print()
+    
+a = int(input())
+b = input()
+c = int(input())
+if b == '+':
+    print(a+c)
+else:
+    print(a*c)
