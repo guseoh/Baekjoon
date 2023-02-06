@@ -28,15 +28,23 @@
 #     pq.put(temp)
 # print(sum)
 
-a = input().split('-')
-num = []
-for i in a:
-    sum = 0
-    s = i.split('+')
-    for j in s:
-        sum += int(j)
-    num.append(sum)
-n = num[0]
-for i in range(1,len(num)):
-    n -= num[i]
-print(n)
+# a = input().split('-')
+# num = []
+# for i in a:
+#     sum = 0
+#     s = i.split('+')
+#     for j in s:
+#         sum += int(j)
+#     num.append(sum)
+# n = num[0]
+# for i in range(1,len(num)):
+#     n -= num[i]
+# print(n)
+
+# str = input() # 문자열 추출
+# result = str
+# for char in str:
+#     if char in "aeiou":
+#         result = result.replace(char, '')
+
+# print(result)
