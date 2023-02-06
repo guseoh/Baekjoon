@@ -49,10 +49,17 @@
 
 # print(result)
 
-answer = ""  # 대소문자 바꾸기
-for i in input():
-    if i.islower():
-        answer += i.upper()
-    else:
-        answer += i.lower()
+# answer = ""  # 대소문자 바꾸기
+# for i in input():
+#     if i.islower():
+#         answer += i.upper()
+#     else:
+#         answer += i.lower()
+# print(answer)
+
+cipher = list(input())
+code = int(input())
+answer = ''
+for i in range(code-1, len(cipher),code):
+    answer += cipher[i]
 print(answer)
