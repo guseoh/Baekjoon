@@ -48,3 +48,11 @@
 #         result = result.replace(char, '')
 
 # print(result)
+
+answer = ""  # 대소문자 바꾸기
+for i in input():
+    if i.islower():
+        answer += i.upper()
+    else:
+        answer += i.lower()
+print(answer)
