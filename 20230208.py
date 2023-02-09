@@ -51,38 +51,38 @@
 
 # print(count)
 
-import math
-n = int(input())
-a = [0] * (1000001)
+# import math
+# n = int(input())
+# a = [0] * (1000001)
 
-for i in range(2,len(a)):
-    a[i] = i
+# for i in range(2,len(a)):
+#     a[i] = i
 
-for i in range(2,int(math.sqrt(len(a)) + 1)): # 제곱급까지
-    if a[i] == 0: 
-        continue
-    for j in range(i + i, len(a), i): # 배수 지우기
-        a[j] == 0
+# for i in range(2,int(math.sqrt(len(a)) + 1)): # 제곱급까지
+#     if a[i] == 0: 
+#         continue
+#     for j in range(i + i, len(a), i): # 배수 지우기
+#         a[j] == 0
 
-def pal(target):
-    temp = list(str(target))
-    s = 0
-    e = len(temp) - 1
-    while (s < e):
-        if temp[s] != temp[e]:
-            False
-        s += 1
-        e -= 1
-    return True
-i = n
+# def pal(target):
+#     temp = list(str(target))
+#     s = 0
+#     e = len(temp) - 1
+#     while (s < e):
+#         if temp[s] != temp[e]:
+#             False
+#         s += 1
+#         e -= 1
+#     return True
+# i = n
 
-while True:
-    if a[i] != 0:
-        result = a[i] 
-        if (pal(result)):
-            print(result)
-            break
-    i += 1
+# while True:
+#     if a[i] != 0:
+#         result = a[i] 
+#         if (pal(result)):
+#             print(result)
+#             break
+#     i += 1
     
 # import math
 
@@ -107,3 +107,29 @@ while True:
 #     result = 1003001 # 100만 이상이면서 팰림드롬 및 소수일 경우를 적용
 
 # print(result)
+
+# n = input()
+# num = n
+# cnt = 0
+# while 1:
+#     if len(num) == 0:
+#         num = "0" + num
+#     plus = str(int(num[0]) + int(num[1]))
+#     num = num[-1] + plus[-1]
+#     cnt += 1
+#     if num == n:
+#         print(cnt)
+#         break
+
+n = int(input())
+num = n
+cnt = 0
+while True:
+    a = num // 10
+    b = num % 10
+    c = (a+b) % 10
+    num = (b * 10) + c
+    cnt += 1
+    if num == n:
+        print(cnt)
+        break
