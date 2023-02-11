@@ -33,13 +33,22 @@
 #     max_index = cnt_list.index(max(cnt_list))  # count 숫자 최대값 인덱스(위치)
 #     print(unique_words[max_index])
 
-def GCD(a,b): # 유클리드 호제법
-    if b % a: 
-        return GCD(b % a, a)
-    else: return a
+# def GCD(a,b): # 유클리드 호제법
+#     if b % a: 
+#         return GCD(b % a, a)
+#     else: return a
     
-n,m = map(int, input().split(':'))
-a = GCD(n,m)
-print(n // a, end='')
-print(':', end='')
-print(m // a, end='')
+# n,m = map(int, input().split(':'))
+# a = GCD(n,m)
+# print(n // a, end='')
+# print(':', end='')
+# print(m // a, end='')
+
+a,b = map(int, input().split())  # 1924 => 1 2 4 9, 
+aa = list(input())
+aa.sort()
+
+for _ in range(b):
+    aa.pop(0)
+aa.sort(reverse=True)
+print(''.join(aa))
