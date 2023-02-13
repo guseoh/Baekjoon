@@ -59,17 +59,18 @@
 #         else:
 #             print(queue[-1])
 
-test = int(input())
-for i in range(test):
-    map = {}
-    answer = 1
-    n = int(input())
-    for j in range(n):
-        a,b = input().split()
-        if not b in map:
-            map[b] = 1
-        else: # 의상의 종류가 존재하면 키 값 1 증가
-            map[b] += 1
-    for k in map.keys():
-        answer *= (map[k]+1)
-    print(answer - 1)
+# test = int(input())
+# for i in range(test):
+#     map = {}
+#     answer = 1
+#     n = int(input())
+#     for j in range(n):
+#         a,b = input().split()
+#         if not b in map:
+#             map[b] = 1
+#         else: # 의상의 종류가 존재하면 키 값 1 증가
+#             map[b] += 1
+#     for k in map.keys():
+#         answer *= (map[k]+1)
+#     print(answer - 1)
+
