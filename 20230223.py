@@ -21,3 +21,15 @@
 #     line = input()
 #     if line == '#': break
 #     print(sum([(ch in vowels) for ch in line]))
+
+#9 7 5 3 1   0 1 2 3 4 
+# n = int(input())
+# for i in range(n, 0, -1):
+#     print(' ' * (n - i) + '*' * (2 * i - 1))
+
+# a = [int(input()) for _ in range(4)]
+# a.sort()
+# b = [int(input()) for _ in range(2)]
+# print(sum(a[1:]) + max(b))
+
+a = 
