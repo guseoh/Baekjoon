@@ -30,6 +30,25 @@
 # a = [int(input()) for _ in range(4)]
 # a.sort()
 # b = [int(input()) for _ in range(2)]
-# print(sum(a[1:]) + max(b))
+# # print(sum(a[1:]) + max(b))
 
-a = 
+# n = int(input())
+# a = [str(i) for i in range(1,n+1)]
+# c = []
+# for i in a:
+#     if i == '4' or i == '7':
+#         c.append(i)
+# print(c)
+
+
+n = int(input())
+while True:
+    flag = True
+    for i in str(n):
+        print(i)
+        if i!="4" and i!="7":
+            flag = False
+            n -= 1
+    if flag :
+        print(n)
+        break
