@@ -56,3 +56,22 @@ for i in range(0, n-1):
 from itertools import combinations
 print(list(combinations[1,2,3,4], 3))
 
+# 2. 빈도 계산
+from collections import Counter 
+
+# 3. 힙
+# 3-1. 최소힙, 최대힙
+import heapq
+heap = []  
+heapq.heappush(heap, 3)
+heapq.heappop(heap)
+
+# 4. 덱
+from collections import deque 
+deq = deque() # 덱 초기화
+deq.appendleft(10) # 덱 왼쪽에 추가
+deq.append(-10) # 덱 오른쪽에 추가
+print(deq.pop())  
+deq.rotate(-1) # 음수이면 왼쪽으로 회전
+
+

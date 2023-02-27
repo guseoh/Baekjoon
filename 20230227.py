@@ -82,3 +82,29 @@
 #             total += math.gcd(arr[j], arr[k])
 #     print(total)
 
+# from itertools import combinations
+
+# a,b = map(int, input().split())
+
+# arr =[str(i+1) for i in range(a)] # 1 2 3
+
+# for i in list(combinations(arr, b)):
+#     print(" ".join(i))
+
+# from itertools import permutations
+
+# a,b = map(int, input().split())
+# arr =[str(i+1) for i in range(a)] # 1 2 3
+
+# for i in list(permutations(arr, b)):
+#     print(" ".join(i))
+
+from collections import Counter  
+#[(30, 3), (40, 2), (60, 2), (10, 1), (20, 1), (50, 1)] 출력 결과
+arr = [int(input()) for _ in range(10)]
+val = Counter(arr).most_common()
+print(sum(arr) // 10)
+print(val[0][0])
+
+
+
