@@ -43,6 +43,16 @@ arr = [[0] * N for _ in range(M)] # 가로 세로
 list.count(3)
 
 # 4-5. 배열 정렬
-
 arr.sort(key=lambda x:(x[0], x[1]))
+
+
+# 순열과 조합
+# 1-1. 순수한 방법
+for i in range(0, n-1):
+    for j in range(i+1, n):
+        print(i,j)
+
+# 1-2. itertools을 사용한 조합
+from itertools import combinations
+print(list(combinations[1,2,3,4], 3))
 
