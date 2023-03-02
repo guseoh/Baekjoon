@@ -75,3 +75,8 @@ print(deq.pop())
 deq.rotate(-1) # 음수이면 왼쪽으로 회전
 
 
+# <find()>
+#str.find(찾을 문자, 시작점, 종료점)
+
+
+
