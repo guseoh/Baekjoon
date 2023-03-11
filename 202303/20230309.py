@@ -15,11 +15,11 @@ a = []
 for _ in range(int(input())):
     x = int(input())
     a.append(x)
-    
+
 a.sort()
 
 print(sum(a) // len(a))
-print(a[len(a)//2])
+print(a[len(a) // 2])
 
 cnt = Counter(a).most_common(2)
 
