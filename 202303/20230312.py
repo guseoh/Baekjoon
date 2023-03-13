@@ -1,4 +1,4 @@
-a,b = map(int, input().split())
+a,b = map(int, input().split()) # 순열과 조합으로 풀이 가능
 z = list(map(int, input().split()))
 s = 0
 for i in range(a):
